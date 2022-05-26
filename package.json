@@ -1,0 +1,49 @@
+{
+    "name": "learn_express",
+    "version": "1.0.0",
+    "description": "learning express from course",
+    "main": "app.js",
+    "engines": {
+        "node": "v16.14.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "NODE_ENV=production MONGO_USER=VVahe MONGO_PASSWORD=vahe01 MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_51KtZiSGC2hjL06gMXIXldMU4rVHVXWiP5K5SqPyRR2CuqnH84zHRczhZgcsqTk4tWenJFdEDKVazCYG6ugqdmhBE00aIn1Rnou node app.js",
+        "start:dev": "nodemon app.js",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "author": "Vahe Aleksanyan",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.2",
+        "compression": "^1.7.4",
+        "connect-flash": "^0.1.1",
+        "connect-mongodb-session": "^3.1.1",
+        "csurf": "^1.11.0",
+        "ejs": "^3.1.6",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-hbs": "^1.0.3",
+        "express": "^4.17.3",
+        "express-handlebars": "^3.0.0",
+        "express-session": "^1.17.2",
+        "express-validator": "^6.14.0",
+        "helmet": "^5.1.0",
+        "mongodb": "^4.4.1",
+        "mongoose": "^6.2.10",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.4",
+        "nodemailer": "^6.7.3",
+        "pdfkit": "^0.13.0",
+        "prettier": "^2.5.1",
+        "pug": "^3.0.2",
+        "stripe": "^8.219.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.11.0",
+        "nodemon": "^2.0.15"
+    }
+}
