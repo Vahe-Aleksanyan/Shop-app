@@ -1,0 +1,1 @@
+Basic shop app created with EJS templating engine and express
