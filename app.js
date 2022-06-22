@@ -1,7 +1,7 @@
 const express = require('express'); // download express by npm and import it here
 const path = require('path'); // for creating path
 const fs = require('fs'); // for reading or writing files
-const https = require('https');
+const https = require('https'); // for creating server
 const bodyParser = require('body-parser'); // parses incoming requests
 const mongoose = require('mongoose'); // db
 const session = require('express-session'); // for creating session -  You assign the client an ID and it makes all further requests using that ID.
@@ -127,7 +127,6 @@ app.use(errorController.get404); //  use controller middleware function referenc
 
 // special error handling middleware with 4 parameters
     function errorHandler(err, req, res, next) {
-      console.log(err, 'errerrerr');
       res.status(500).render('500', {
         pageTitle: 'Error',
         path: '/500',
